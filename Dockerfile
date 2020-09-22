@@ -19,7 +19,7 @@ RUN apt install -y wget curl
 RUN mkdir /opt/tomcat
 RUN wget https://downloads.apache.org/tomcat/tomcat-8/v8.5.57/bin/apache-tomcat-8.5.57-deployer.tar.gz -O /tmp/tomcat.tar.gz
 RUN cd /tmp && tar xvfz tomcat.tar.gz
-RUN cp -Rv /tmp/apache-tomcat-8.5.57/* /opt/tomcat/
+RUN cp -Rv /tmp/apache-tomcat-8.5.*/* /opt/tomcat/
 
 
 WORKDIR /application
