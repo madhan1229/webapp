@@ -26,5 +26,5 @@ WORKDIR /application
 COPY . .
 RUN "sh" "mvninstall.sh"
 COPY start.sh /home
-EXPOSE 8081
+EXPOSE 8080
 CMD "sh" "/home/start.sh"
